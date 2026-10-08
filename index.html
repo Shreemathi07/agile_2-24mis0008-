@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Event Registration</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f2f5f8;
+        }
+
+        header {
+            background: #1f4e79;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        header h1 {
+            margin: 0 0 10px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 700px;
+            margin: 30px auto;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px #ccc;
+        }
+
+        .event {
+            margin-bottom: 25px;
+        }
+
+        .event h2 {
+            color: #1f4e79;
+        }
+
+        .event p {
+            line-height: 1.6;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 6px;
+            font-weight: bold;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 11px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 25px;
+            padding: 13px;
+            border: none;
+            border-radius: 6px;
+            background: #1f4e79;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #163a5c;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Student Event Registration</h1>
+    <p>Register for the upcoming college event</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+
+        <div class="event">
+            <h2>Tech Innovation 2026</h2>
+            <p>
+                Join us for a technology-focused event featuring
+                innovative ideas, technical sessions and student projects.
+            </p>
+
+            <p><strong>Event Date:</strong> 20 October 2026</p>
+        </div>
+
+        <form>
+
+            <label for="name">Student Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+
+            <label for="regno">Register Number</label>
+            <input type="text" id="regno" placeholder="Enter your register number">
+
+            <label for="department">Department</label>
+            <select id="department">
+                <option value="">Select Department</option>
+                <option>Software Engineering</option>
+                <option>Computer Science</option>
+                <option>Information Technology</option>
+                <option>Electronics and Communication</option>
+            </select>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email">
+
+            <label for="date">Event Date</label>
+            <input type="date" id="date">
+
+            <button type="submit">Register for Event</button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>
